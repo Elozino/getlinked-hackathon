@@ -32,7 +32,7 @@
   justify-content: space-between;
   align-items: center;
   margin-top: 3.25rem;
-  max-width: 1200px;
+  padding: 0 8rem;
   min-height: calc(100vh - 100px);
   margin: auto;
 }
@@ -148,7 +148,7 @@ form {
     gap: 5rem;
     margin-top: 3rem;
   }
-  .contact_address{
+  .contact_address {
     text-align: center;
     width: 100%;
   }
@@ -193,4 +193,4 @@ form {
   .contact_address {
     display: block;
   }
-} 
+}
