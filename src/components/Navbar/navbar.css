@@ -1,0 +1,146 @@
+a {
+  color: unset;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+  height: 80px;
+  width: 100%;
+  padding: 0 10rem;
+}
+
+.navbar_logo {
+  color: var(--white);
+  font-weight: 700;
+  font-size: 2.25rem;
+  font-family: "ClashDisplay-Variable";
+}
+
+.navbar_logo .themed {
+  color: var(--primary-color3);
+}
+
+.navbar_links {
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3.5rem;
+}
+
+.navbar_links-container {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3.5rem;
+  font-family: Montserrat !important;
+}
+
+.navbar_links-container .themed-gradient {
+  background: linear-gradient(90deg, #903aff 3.08%, #ff26b9 93.85%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 500;
+}
+
+.navbar_links button {
+  width: 10.75rem;
+  height: 3.125rem;
+  border-radius: 4px;
+  background: linear-gradient(
+    270deg,
+    #903aff 0%,
+    #d434fe 56.42%,
+    #ff26b9 99.99%,
+    #fe34b9 100%
+  );
+  color: var(--white);
+  font-family: Montserrat;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+.navbar_links a {
+  color: inherit;
+  background-color: inherit;
+}
+
+.navbar_mobile {
+  display: none;
+}
+
+@media screen and (max-width: 1080px) {
+  .navbar_links {
+    display: none;
+  }
+  .navbar_mobile {
+    display: block;
+    background: none;
+    outline: none;
+    all: unset;
+    cursor: pointer;
+  }
+  .navbar_links > a.active {
+    display: none;
+  }
+  .navbar_links.active {
+    display: block;
+    border-radius: 0 8px;
+    border: 0.5px solid rgba(255, 255, 255, 0.04);
+    background: #150e28;
+    background-color: #5f1313;
+    backdrop-filter: blur(30px);
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 500px;
+    display: grid;
+    place-content: center;
+  }
+  .cancel::before {
+    content: url("../../assets/images/Group 1.svg");
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    border-radius: 23px;
+    border: 1px solid #903aff;
+    width: 23px;
+    height: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .navbar_links-container.active {
+    display: flex;
+    flex-direction: column;
+  }
+  .navbar_links > a.active {
+    display: block;
+  }
+  .navbar {
+    max-width: 1024px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 0 5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navbar {
+    padding: 0 3rem;
+  }
+}

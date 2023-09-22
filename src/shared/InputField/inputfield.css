@@ -1,0 +1,25 @@
+.input-container {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.input-container label {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: .875rem;
+  font-weight: 400;
+}
+
+.input {
+  caret-color: var(--white);
+  padding: 1rem;
+  border-radius: 4px;
+  border: 1px solid #fff;
+  background: transparent;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  outline: none;
+}
+
+.input::placeholder {
+  color: var(--white);
+}
