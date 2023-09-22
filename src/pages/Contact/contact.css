@@ -4,7 +4,7 @@
   background-color: var(--primary-color1);
   overflow-x: hidden;
   margin: 0 auto;
-  /* padding: 0 3rem; */
+  padding: 0 3rem;
 }
 
 .contact_shadow-top {
@@ -32,7 +32,7 @@
   justify-content: space-between;
   align-items: center;
   margin-top: 3.25rem;
-  padding: 0 8rem;
+  max-width: 1200px;
   min-height: calc(100vh - 100px);
   margin: auto;
 }
@@ -148,7 +148,7 @@ form {
     gap: 5rem;
     margin-top: 3rem;
   }
-  .contact_address {
+  .contact_address{
     text-align: center;
     width: 100%;
   }
@@ -193,4 +193,4 @@ form {
   .contact_address {
     display: block;
   }
-}
+} 
