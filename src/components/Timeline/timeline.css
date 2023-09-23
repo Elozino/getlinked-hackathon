@@ -149,7 +149,11 @@
   .timeline_line {
     background-color: #d434fe;
     width: 3px;
-    height: 10rem;
+    height: 7rem;
+  }
+
+  .timeline_track {
+    margin-top: 1rem;
   }
 
   .timeline_track .title {
@@ -164,5 +168,8 @@
     font-style: normal;
     font-weight: 400;
     line-height: 170.9%; /* 23.926px */
+  }
+  .body {
+    margin-bottom: .5rem;
   }
 }
