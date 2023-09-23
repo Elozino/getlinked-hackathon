@@ -126,6 +126,9 @@ a {
     justify-content: center;
     cursor: pointer;
   }
+  .navbar_links-container{
+    align-items: start;
+  }
   .navbar_links-container.active {
     display: flex;
     flex-direction: column;

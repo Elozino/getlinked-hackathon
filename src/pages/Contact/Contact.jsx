@@ -4,9 +4,61 @@ import InputField from "../../shared/InputField/InputField"
 import './contact.css'
 import shadowTop from '../../assets/images/Purple-Lens-FlareTop-PNG.png'
 import shadowBottom from '../../assets/images/Purple-Lens-Flare-Bottom-PNG.png'
+import { contactUrl } from "../../utils/service/endpoint"
+import { useState } from "react"
+import { toast } from "react-toastify"
 
 
 const Contact = () => {
+  const [formState, setFormState] = useState({
+    loading: false,
+    error: false,
+    message: ''
+  })
+  const [formInput, setFormInput] = useState({
+    first_name: '',
+    phone_number: '',
+    message: '',
+    email: ''
+  })
+
+  const handleChange = (e) => {
+    setFormInput((prev) => ({ ...prev, [e.target.name]: e.target.value }))
+  }
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    if (formInput.first_name === '' || formInput.email === '' || formInput.message === '' || formInput.phone_number === ''){
+      toast.warning('All fields required')
+      return
+    }
+      try {
+        setFormState(prev => ({ ...prev, loading: true }))
+        const response = await fetch(`${contactUrl}`, {
+          method: 'POST',
+          body: JSON.stringify(formInput),
+          headers: {
+            'Content-Type': 'application/json',
+          },
+        })
+        const res = response.json()
+        const data = res.data
+        toast.success("Thank you for contacting us")
+        return data
+      } catch (error) {
+        setFormState(prev => ({ ...prev, error: true, message: error.message, loading: false }))
+        toast.error('We encountered an error')
+      } finally {
+        setFormInput({
+          first_name: '',
+          phone_number: '',
+          message: '',
+          email: ''
+        })
+        setFormState(prev => ({ ...prev, loading: false }))
+      }
+  }
+
   return (
     <main className="contact">
       <img
@@ -74,26 +126,46 @@ const Contact = () => {
             <h3 className="contact_themed">Questions or need assistance?</h3>
             <h3 className="contact_themed">Let us know about it!</h3>
           </div>
-          <form action="">
+          <form action=""
+            onSubmit={handleSubmit}
+          >
             <InputField
               type='text'
               placeholder='First Name'
               className='contact_input'
+              name='first_name'
+              value={formInput.first_name}
+              onChange={handleChange}
             />
             <InputField
               type='email'
               placeholder='Mail'
               className='contact_input'
+              name='email'
+              value={formInput.email}
+              onChange={handleChange}
+            />
+            <InputField
+              type='telephone'
+              placeholder='Telephone'
+              className='contact_input'
+              name='phone_number'
+              value={formInput.phone_number}
+              onChange={handleChange}
             />
             <div>
               <textarea
                 className="text-area contact_input"
                 placeholder="Message"
-                name="" id="" cols="30" rows="7"></textarea>
+                name='message'
+                id="" cols="30" rows="7"
+                value={formInput.message}
+                onChange={handleChange}
+              ></textarea>
             </div>
             <div className="contact_btn-container">
               <Button
-                title='Submit'
+                title={formState.loading ? 'Please wait...' : 'Submit'}
               />
             </div>
           </form>

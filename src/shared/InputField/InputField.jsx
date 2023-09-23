@@ -1,6 +1,6 @@
 import './inputfield.css'
 
-const InputField = ({ type = "text", placeholder, className, label }) => {
+const InputField = ({ type, placeholder, className, label, onChange, value, name }) => {
   return (
     <div className='input-container'>
       <label htmlFor="">{label}</label>
@@ -8,6 +8,10 @@ const InputField = ({ type = "text", placeholder, className, label }) => {
         type={type}
         placeholder={placeholder}
         className={`input ${className}`}
+        id={name}
+        name={name}
+        value={value}
+        onChange={onChange}
       />
     </div>
   )
