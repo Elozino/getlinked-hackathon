@@ -97,7 +97,6 @@ a {
     border-radius: 0 8px;
     border: 0.5px solid rgba(255, 255, 255, 0.04);
     background: #150e28;
-    background-color: #5f1313;
     backdrop-filter: blur(30px);
     width: 100vw;
     position: absolute;
@@ -135,12 +134,15 @@ a {
 
 @media screen and (max-width: 768px) {
   .navbar {
-    padding: 0 5rem;
+    padding: 1.5rem 3rem;
   }
 }
 
 @media screen and (max-width: 480px) {
+  .navbar_logo {
+    font-size: 1.5rem;
+  }
   .navbar {
-    padding: 0 3rem;
+    padding: 1rem;
   }
 }

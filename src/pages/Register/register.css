@@ -4,7 +4,6 @@
   background-color: var(--primary-color1);
   overflow-x: hidden;
   margin: 0 auto;
-  padding: 0 2rem;
 }
 
 .register_header {
@@ -155,10 +154,10 @@
 
 @media screen and (max-width: 768px) {
   .register {
-    padding: 2rem 3rem;
+    padding: 0rem;
   }
   .register_header {
-    padding: 0rem;
+    padding: 2rem 3rem;
   }
   .register_form-container {
     padding: 2rem 3.625rem;
@@ -167,10 +166,10 @@
 
 @media screen and (max-width: 480px) {
   .register {
-    padding: 2rem 3rem;
+    padding: 0;
   }
   .register_form-container {
-    padding: 0;
+    padding: 2rem;
     background: transparent;
   }
   .register_form {
