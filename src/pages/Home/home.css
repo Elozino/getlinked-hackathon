@@ -515,7 +515,7 @@ nav {
 }
 
 .terms ul {
-  list-style: url("../../assets/images/check.svg");
+  list-style: none;
 }
 
 .terms ul li {
@@ -525,6 +525,13 @@ nav {
   font-style: normal;
   font-weight: 400;
   line-height: 216.4%; /* 30.296px */
+  display: flex;
+  gap: 10px;
+  align-items: start;
+}
+
+.terms ul li img{
+  margin-top: 10px;
 }
 
 /* FOOTER ================================= */
@@ -1011,6 +1018,9 @@ footer {
   }
   .terms ul li {
     font-size: 0.7rem;
+  }
+  .terms ul li img{
+    margin-top: 5px;
   }
   .home_privacy-illustration img {
     width: 100%;

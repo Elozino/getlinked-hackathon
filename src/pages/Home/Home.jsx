@@ -16,7 +16,7 @@ import chain from '../../assets/images/chain-9365116-7621444.png'
 import banger from '../../assets/images/banger.png'
 import shadowTop from '../../assets/images/Purple-Lens-FlareTop-PNG.png'
 import shadowBottom from '../../assets/images/Purple-Lens-Flare-Bottom-PNG.png'
-
+import check from '../../assets/images/check.svg'
 const Home = () => {
   return (
     <div className="home">
@@ -270,12 +270,18 @@ const Home = () => {
                 <p className="terms-text">Here are terms of our Standard License:</p>
                 <ul>
                   <li>
-                    The Standard License grants you a non-exclusive right to
-                    navigate and register for our event
+                    <img src={check} alt="check" />
+                    <p>
+                      The Standard License grants you a non-exclusive right to
+                      navigate and register for our event
+                    </p>
                   </li>
                   <li>
-                    You are licensed to use the item available at any free source
-                    sites, for your project developement
+                    <img src={check} alt="check" />
+                    <p>
+                      You are licensed to use the item available at any free source
+                      sites, for your project developement
+                    </p>
                   </li>
                 </ul>
               </div>
