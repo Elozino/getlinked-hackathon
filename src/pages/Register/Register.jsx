@@ -5,6 +5,8 @@ import InputField from "../../shared/InputField/InputField"
 import shadowTop from '../../assets/images/Purple-Lens-FlareTop-PNG.png'
 import shadowBottom from '../../assets/images/Purple-Lens-Flare-Bottom-PNG.png'
 import illustration from '../../assets/images/3d-graphic-designer-showing-thumbs-up-png 1.png'
+import lady from '../../assets/images/lady.png'
+import guy from '../../assets/images/image_processing20200511-10310-13mnlsx.png'
 import { useEffect, useState } from 'react'
 import Modal from '../../components/Modal/Modal'
 import { url } from '../../utils/service/endpoint'
@@ -63,7 +65,13 @@ const Register = () => {
           <div className="register_form-container">
             <div className="register_form-title">
               <h3 className="register_themed">Register</h3>
-              <h5>Be part of this movement!</h5>
+              <div className='movement'>
+                <h5>Be part of this movement!</h5>
+                <div className='moving'>
+                  <img src={lady} alt="lady" />
+                  <img src={guy} alt="guy" />
+                </div>
+              </div>
             </div>
 
             <form action="">

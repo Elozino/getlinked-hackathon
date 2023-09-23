@@ -103,8 +103,11 @@ a {
     top: 0;
     left: 0;
     height: 500px;
-    display: grid;
-    place-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding-left: 10%;
   }
   .cancel::before {
     content: url("../../assets/images/Group 1.svg");

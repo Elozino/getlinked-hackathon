@@ -1,7 +1,8 @@
 import Navbar from "../../components/Navbar/Navbar"
 import './home.css'
-import hackathonguy from '../../assets/images/Hackathon guy.png'
 import Button from '../../shared/Button/Button'
+import Timeline from "../../components/Timeline/Timeline"
+import hackathonguy from '../../assets/images/Hackathon guy.png'
 import { Link } from "react-router-dom"
 import bigIdea from '../../assets/images/The big idea.png'
 import rules from '../../assets/images/rules.png'
@@ -210,7 +211,9 @@ const Home = () => {
           </div>
         </section>
         {/* timeline */}
-        <section className="home_timeline-wrapper"></section>
+        <section className="home_timeline-wrapper">
+          <Timeline />
+        </section>
         <section className="home_prize_wrapper">
           <div className="home_prize">
             <div className="flex">

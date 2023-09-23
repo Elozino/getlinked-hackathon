@@ -44,6 +44,18 @@
   font-weight: 600;
 }
 
+.movement {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.moving{
+  border-bottom: 1px dashed #d434fe;
+  width: 100px;
+  text-align: center;
+}
+
 .register_form-container h5 {
   color: #fff;
   font-family: Montserrat;
