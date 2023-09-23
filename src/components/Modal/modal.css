@@ -15,14 +15,18 @@
   height: 100vh;
 }
 
-.modal_content div {
+.modal_content > div {
   display: grid;
   place-items: center;
-  gap: 1rem;
+  border: 1px solid #D434FE;
+  border-radius: 5px;
+  padding: 2rem;
+  gap: 2rem;
 }
 
 .modal_content img {
-  width: 30rem;
+  width: 20rem;
+  object-fit: contain;
 }
 
 .modal_content h3 {
