@@ -11,7 +11,7 @@ const Timeline = () => {
         </div>
         <div className="timeline_events">
           <div className="timeline_track">
-            <div className="left_track">
+            <div className="left_track head">
               <h4 className='title'>Hackathon Announcement</h4>
               <p className='text'>
                 The getlinked tech hackathon 1.0 is formally announced
@@ -22,14 +22,14 @@ const Timeline = () => {
               <div className="timeline_line"></div>
               <div className="circle">1</div>
             </div>
-            <div className="right_track">
+            <div className="right_track body">
               <h4 className="title">
                 November 18, 2023
               </h4>
             </div>
           </div>
           <div className="timeline_track">
-            <div className="left_track">
+            <div className="left_track body">
               <h4 className="title">
                 November 18, 2023
               </h4>
@@ -38,7 +38,7 @@ const Timeline = () => {
               <div className="timeline_line"></div>
               <div className="circle">2</div>
             </div>
-            <div className="right_track">
+            <div className="right_track head">
               <h4 className='title'>Teams Registration begins</h4>
               <p className='text'>
                 Interested teams can now show their interest in the
@@ -47,7 +47,7 @@ const Timeline = () => {
             </div>
           </div>
           <div className="timeline_track">
-            <div className="left_track">
+            <div className="left_track head">
               <h4 className='title'>Teams Registration ends</h4>
               <p className='text'>
                 Interested Participants are no longer Allowed to
@@ -58,14 +58,14 @@ const Timeline = () => {
               <div className="timeline_line"></div>
               <div className="circle">3</div>
             </div>
-            <div className="right_track">
+            <div className="right_track body">
               <h4 className="title">
                 November 18, 2023
               </h4>
             </div>
           </div>
           <div className="timeline_track">
-            <div className="left_track">
+            <div className="left_track body">
               <h4 className="title">
                 November 18, 2023
               </h4>
@@ -74,7 +74,7 @@ const Timeline = () => {
               <div className="timeline_line"></div>
               <div className="circle">4</div>
             </div>
-            <div className="right_track">
+            <div className="right_track head">
               <h4 className='title'>Announcement of the accepted teams
                 and ideas</h4>
               <p className='text'>
@@ -84,7 +84,7 @@ const Timeline = () => {
             </div>
           </div>
           <div className="timeline_track">
-            <div className="left_track">
+            <div className="left_track head">
               <h4 className='title'>Getlinked Hackathon 1.0 Offically Begins</h4>
               <p className='text'>
                 Accepted teams can now proceed to build their
@@ -95,14 +95,14 @@ const Timeline = () => {
               <div className="timeline_line"></div>
               <div className="circle">5</div>
             </div>
-            <div className="right_track">
+            <div className="right_track body">
               <h4 className="title">
                 November 18, 2023
               </h4>
             </div>
           </div>
           <div className="timeline_track">
-            <div className="left_track">
+            <div className="left_track body">
               <h4 className="title">
                 November 18, 2023
               </h4>
@@ -111,7 +111,7 @@ const Timeline = () => {
               <div className="timeline_line"></div>
               <div className="circle">6</div>
             </div>
-            <div className="right_track">
+            <div className="right_track head">
               <h4 className='title'>Demo Day</h4>
               <p className='text'>
                 Teams get the opportunity to pitch their projects to judges.

@@ -531,7 +531,7 @@ nav {
   align-items: start;
 }
 
-.terms ul li img{
+.terms ul li img {
   margin-top: 10px;
 }
 
@@ -655,6 +655,11 @@ footer {
 }
 
 @media screen and (max-width: 1024px) {
+  .home_container header .float {
+    text-align: center;
+    left: 0;
+    top: 2%;
+  }
   .home_container header > div {
     flex-direction: column;
     height: 100%;
@@ -936,7 +941,7 @@ footer {
   .terms ul li {
     font-size: 1rem;
   }
-  .terms h6{
+  .terms h6 {
     font-size: 1.5rem;
   }
   .home_privacy-illustration {
@@ -1011,7 +1016,7 @@ footer {
   .home_privacy-content .policy-text {
     font-size: 0.7rem;
   }
-  .terms h6{
+  .terms h6 {
     font-size: 1rem;
   }
   .terms .terms-text {
@@ -1020,7 +1025,7 @@ footer {
   .terms ul li {
     font-size: 0.7rem;
   }
-  .terms ul li img{
+  .terms ul li img {
     margin-top: 5px;
   }
   .home_privacy-illustration img {

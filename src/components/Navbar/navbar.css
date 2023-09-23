@@ -79,6 +79,9 @@ a {
 }
 
 @media screen and (max-width: 1080px) {
+  .navbar {
+    padding: 0 5rem;
+  }
   .navbar_links {
     display: none;
   }
